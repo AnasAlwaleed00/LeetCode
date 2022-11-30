@@ -6,8 +6,8 @@ class Solution:
                 if 0 <= r < len(board) and 0 <= c < len(board[r]) and board[r][c] == "M":
                     numMines +=1
         return numMines
+    
     def updateBoard(self, board: List[List[str]], click: List[int]) -> List[List[str]]:
-        
         x, y = click
         if board[x][y] == "M":
             board[x][y] = "X"
